@@ -1,0 +1,974 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>AKX Mock Up</title>
+    <link href="akx.css" rel="stylesheet" type="text/css" />
+    <script type='text/javascript' src='Jquery.js'></script>
+    <script type='text/javascript' src='JqueryUI.js'></script>
+    <script src="hover.js" type="text/javascript"></script>
+    <script src="jquery.megamenu.js" type="text/javascript"></script>
+    <script src="Tabs.js" type="text/javascript"></script>
+    <script src="carousel.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(function() {
+            var SelfLocation = window.location.href.split('?');
+            switch (SelfLocation[1]) {
+                case "justify_right":
+                    jQuery(".megamenu").megamenu({ 'justify': 'right' });
+                    break;
+                case "justify_left":
+                default:
+                    jQuery(".megamenu").megamenu();
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <div id="sitecollectionnav">
+            <nav class="container">
+                <a href="#"><img src="img/army.png" alt="Army Logo" id="mainlogo" class="left"/></a>
+                <div id="home_title" class="left"><a href="#">Army Knowledge eXchange</a></div>
+                <ul>
+                    <li><a href="#">AKX</a></li>
+                    <li><a href="#">BAeBB</a></li>
+                    <li><a href="#">LIFC</a></li>
+                    <li><a href="#">COP</a></li>
+                    <li><a href="#">AKX Player</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="mainnav">
+            <nav class="container">
+                <ul class="megamenu">
+                    <li><a href="#" class="menu_items">Home</a>  
+                    </li>
+                    <li><a href="#" class="menu_items">Operations</a>
+                        <div class="tabs">
+                            <div class="nav_headings">
+                                <ul>
+                                    <li><a href="#heading1">Current Operations</a></li>
+                                    <li><a href="#heading2">UK Ops / Resilience</a></li>
+                                    <li><a href="#heading3">Contingency / Future Operations</a></li>
+                                    <li><a href="#heading4">Past Operations</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav_data" id="heading1" >
+                                <div class="left">
+                                    <ul class="list_double">
+                                        <li><a href="#">The Afghan Hub</a></li>                                        <li><a href="#">Are You Deploying On Ops?</a></li>                                        <li><a href="#">Deploying Formation Reading List</a></li>                                        <li><a href="#">RTMC WIKI</a></li>                                        <li><a href="#">Advice To Your Successor</a></li>                                        <li><a href="#">Afghan CIS Briefing Facility</a></li>                                        <li><a href="#">After Action Reviews</a></li>                                        <li><a href="#">Attack The Network - COIN Targeting</a></li>                                        <li><a href="#">Biometrics</a></li>                                        <li><a href="#">BOWMAN (BUCK)</a></li>                                        <li><a href="#">C-IED</a></li>                                        <li><a href="#">Collective Training Group</a></li>                                        <li><a href="#">Culture & Language</a></li>                                        <li><a href="#">Female Engagement Teams</a></li>                                        <li><a href="#">Ground Sign Awareness</a></li>                                        <li><a href="#">HERRICK Lessons</a></li>                                        <li><a href="#">HQ Visualiser</a></li>                                        <li><a href="#">Influence Methods</a></li>                                        <li><a href="#">Land Stabilisation & COIN Centre</a></li>
+                                        <li><a href="#">Land Intelligence Fusion Centre</a></li>                                        <li><a href="#">Material & Personnel Exploitation</a></li>                                        <li><a href="#">Medical</a></li>                                        <li><a href="#">Mentoring</a></li>                                        <li><a href="#">Mission Exploitation</a></li>                                        <li><a href="#">MOD Afghanistan Information Portal</a></li>                                        <li><a href="#">MSSG</a></li>                                        <li><a href="#">Operational Support Information</a></li>                                        <li><a href="#">OPLAW</a></li>                                        <li><a href="#">Surveillance & Target Acquisition Plan</a></li>                                        <li><a href="#">Research & Development</a></li>                                        <li><a href="#">Iraq</a></li>                                        <li><a href="#">Falklands Islands</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav_img left">
+                                    <img src="img/menu1.jpg" alt="menutest" />
+                                </div>
+                            </div>
+                            <div class="nav_data" id="heading2" >
+                                <div class="left">
+                                    <ul class="list_double">
+                                        <li>Op GIRAFFE - Adverse weather</li>                                        <li>Op QUICKTHORN - HM Prison Officers dispute</li>                                        <li>Op ESCALIN - Threatened tanker drivers strike</li>                                        <li>Op OLYMPICS - Support to security</li>                                        <li>Op HELVETIC (38X) - Northern Ireland</li>
+                                    </ul>
+                                </div>
+                                <div class="nav_img left">
+                                    <img src="img/menu2.jpg" alt="menutest" />
+                                </div>
+                            </div>
+                            <div class="nav_data" id="heading3" >
+                                <div class="left">
+                                    <ul class="list_double">
+                                        <li>AGILE WARRIOR</li>                                        <li>Contingency Operations Cell</li>                                        <li>Doctrine</li>                                        <li>Force Development</li>                                        <li>Return to Contingency - 16 AA Bde</li>                                        <li>Stabilisation Ops</li>                                        <li>Scenario Setting</li>
+                                    </ul>
+                                </div>
+                                <div class="nav_img left">
+                                    <img src="img/menu3.jpg" alt="menutest" />
+                                </div>
+                            </div>
+                            <div class="nav_data" id="heading4" >
+                                <div class="left">
+                                    <ul class="list_double">
+                                        <li>Op TELIC - Iraq</li>                                        <li>Op TELIC Lessons</li>                                        <li>Baha Mousa Inquiry</li>                                        <li>Op ELLAMY - Libya</li>
+                                    </ul>
+                                </div>
+                                <div class="nav_img left">
+                                    <img src="img/menu4.jpg" alt="menutest" />
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#" class="menu_items">Training</a>
+                    <div class="tabs">
+                            <div class="nav_headings">
+                                <ul>
+                                    <li><a href="#heading5">ISTAR</a></li>
+                                    <li><a href="#heading6">Command &amp; Control</a></li>
+                                    <li><a href="#heading7">Core Soldier Skills</a></li>
+                                    <li><a href="#heading8">C-IED</a></li>
+                                    <li><a href="#heading9">Logistics and Resources</a></li>
+                                    <li><a href="#heading10">UK Ops / Resilience</a></li>
+                                    <li><a href="#heading11">Lessons From Training</a></li>
+                                    <li><a href="#heading12">Lessons For Training</a></li>
+                                    <li><a href="#heading13">Training Development</a></li>
+                                    <li><a href="#heading14">Training Policy</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav_data" id="heading5" >
+                                <div class="left">
+                                    <ul class="list_double">
+                                        <li>Influence Activity</li>                                        <li>Biometrics</li>                                        <li>Boomerang</li>                                        <li>Candidate C4 ISTAR CTO Guide</li>                                        <li>Attack The Network - COIN Targeting</li>                                        <li>Targeting</li>                                        <li>EW / Cyber</li>                                        <li>Surveillance & Target Acquisition Plan</li>
+                                    </ul>
+                                </div>
+                                <div class="nav_img left">
+                                    <img src="img/menu5.jpg" alt="menutest" />
+                                </div>
+                            </div>
+                            <div class="nav_data" id="heading6" >
+                                <div class="left">
+                                    <ul class="list_double">
+                                        <li>Combat Estimate</li>                                        <li>Operational Staff Work</li>                                        <li>Combat ID</li>                                        <li>Consequence Management</li>                                        <li>BOWMAN User Community Knowlegde Base</li>
+                                        <li>HQ Infrastructure</li>
+                                        <li>HQ Visualiser</li>
+                                        <li>Information Management / Information Exploitation</li>
+                                        <li>Communications</li>
+                                        <li>Air Manoeuvre</li>
+                                        <li>Air Land Integration</li>
+                                        <li>Battlespace Management</li>
+                                    </ul>
+                                </div>
+                                <div class="nav_img left">
+                                    <img src="img/menu6.jpg" alt="menutest" />
+                                </div>
+                            </div>
+                            <div class="nav_data" id="heading7" >
+                                <div class="left">
+                                    <ul class="list_double">
+                                        <li>Battle Casualty Drills</li>                                        <li>Battlefield Discipline</li>                                        <li>Captured Persons</li>                                        <li>Chemical Biological Radiological Nuclear</li>                                        <li>Close Combat Skills</li>                                        <li>Culture and Language Training</li>                                        <li>Digital Literacy</li>
+                                        <li>Dismounted Close Combat</li>
+                                        <li>Driving (Wheeled)</li>
+                                        <li>Seatbelt Safety</li>
+                                        <li>Driving (Tracked)</li>
+                                        <li>Female Engagement Teams</li>
+                                        <li>Fieldcraft</li>
+                                        <li>Fitness</li>
+                                        <li>Force Protection</li>
+                                        <li>Ground Sign Awareness</li>
+                                        <li>Material & Personnel Exploitation</li>
+                                        <li>Navigation</li>
+                                        <li>Infantry Basics</li>
+                                        <li>School of Infantry</li>
+                                        <li>Infantry Battleschool</li>
+                                        <li>Brecon Battlebook</li>
+                                        <li>Shooting (Small Arms)</li>
+                                        <li>Combat Marksmanship</li>
+                                        <li>Shooting (Direct Fire)</li>
+                                        <li>Joint Fires Weapons Effects</li>
+                                        <li>Shooting (Indirect Fire)</li>
+                                        <li>Operational Law - MATT 7</li>
+                                        <li>Rules of Engagement</li>
+                                        <li>Tactical Actions in the Urban Environment</li>
+                                        <li>Survive, Evade, Resist and Extract</li>
+                                        <li>Values & Standards</li>
+                                        <li>Test 1</li>
+                                        <li>Test 1</li>
+                                        <li>Test 1</li>
+                                        <li>Test 1</li>
+                                        <li>Test 1</li>
+                                        <li>Test 1</li>
+                                    </ul>
+                                </div>
+                                <div class="nav_img left">
+                                    <img src="img/menu7.jpg" alt="menutest" />
+                                </div>
+                            </div>
+                            <div class="nav_data" id="heading8" >
+                                <div class="left">
+                                    <ul class="list_double">
+                                        <li>Ground Sign Awareness</li>                                        <li>Talisman</li>
+                                    </ul>
+                                </div>
+                                <div class="nav_img left">
+                                    <img src="img/menu8.jpg" alt="menutest" />
+                                </div>
+                            </div>
+                            <div class="nav_data" id="heading9" >
+                                <div class="left">
+                                    <ul class="list_double">
+                                        <li>Equipment Support</li>                                        <li>Combat Service Support</li>
+                                    </ul>
+                                </div>
+                                <div class="nav_img left">
+                                    <img src="img/menu9.jpg" alt="menutest" />
+                                </div>
+                            </div>
+                            <div class="nav_data" id="heading10" >
+                                <div class="left">
+                                    <ul class="list_double">
+                                        <li>Op GIRAFFE - Adverse Weather</li>                                        <li>Op QUICKTHORN - HM Prison Officer's dispute</li>
+                                        <li>Op ESCALIN - Threatened tanker drivers strike</li>
+                                        <li>Op OLYMPICS - Support to security</li>
+                                        <li>Op HELVETIC (38X) - Northern Ireland</li>
+                                    </ul>
+                                </div>
+                                <div class="nav_img left">
+                                    <img src="img/menu10.jpg" alt="menutest" />
+                                </div>
+                            </div>
+                            <div class="nav_data" id="heading11" >
+                                <div class="left">
+                                    <ul class="list_double">
+                                        <li>IDAPTR</li>                                        <li>MST Review</li>
+                                        <li>PXR</li>
+                                        <li>Op Scenario Trg Vignettes</li>
+                                        <li>After Action Reviews</li>
+                                        <li>Good / Bad Practice</li>
+                                    </ul>
+                                </div>
+                                <div class="nav_img left">
+                                    <img src="img/menu11.jpg" alt="menutest" />
+                                </div>
+                            </div>
+                            <div class="nav_data" id="heading12" >
+                                <div class="left">
+                                    <ul class="list_double">
+                                        <li>Instructor Development</li>                                        <li>Methods and Media Selection</li>
+                                        <li>Learning Technologies</li>
+                                        <li>Simulation</li>
+                                        <li>After Action Reviews</li>
+                                    </ul>
+                                </div>
+                                <div class="nav_img left">
+                                    <img src="img/menu12.jpg" alt="menutest" />
+                                </div>
+                            </div>
+                            <div class="nav_data" id="heading13" >
+                                <div class="left">
+                                    <ul class="list_double">
+                                        <li>Needs Analysis</li>                                        <li>Training Objectives</li>
+                                        <li>Assessment</li>
+                                        <li>Training Design</li>
+                                        <li>Evaluation and Assurance</li>
+                                        <li>Training Research</li>
+                                        <li>MSc Dissertations</li>
+                                    </ul>
+                                </div>
+                                <div class="nav_img left">
+                                    <img src="img/menu13.jpg" alt="menutest" />
+                                </div>
+                            </div>
+                            <div class="nav_data" id="heading14" >
+                                <div class="left">
+                                    <ul class="list_double">
+                                        <li>Individual Training</li>                                        <li>Collective Training</li>
+                                        <li>Blue Book</li>
+                                    </ul>
+                                </div>
+                                <div class="nav_img left">
+                                    <img src="img/menu14.jpg" alt="menutest" />
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#" class="menu_items">Lessons</a></li>
+                    <li><a href="#" class="menu_items">Doctrine &amp; Publications</a></li>
+                    <li><a href="#" class="menu_items">Force Development</a></li>
+                    <li><a href="#" class="menu_items">Forums</a></li>
+                    <li id="search_button" class="menu_items"><a href="#" ><img src="img/search.png" alt="Search" id="search_image"/></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- Slider -->
+    
+    <div id="wrapper">
+        <div id="carousel">
+            <div id="slider"><h1>AKX Headlines</h1>
+                <div id="slider_item" class="mainSliderArticle left">
+                    <div><h3>Lorem Ipsum</h3>
+                    <a href="article.htm"><img src="img/slider1.jpg" /></a></div>
+                    <span><a href="article.htm">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</a></span>
+                </div>
+                <div id="slider_item"  class="subSliderArticleOne left">
+                    <div><h3>Lorem Ipsum</h3>
+                    <img src="img/slider2.jpg" /></div>
+                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</span>
+                </div>
+                <div id="slider_item"  class="subSliderArticleThree left">
+                    <div><h3>Lorem Ipsum</h3>
+                    <img src="img/slider4.jpg" /></div>
+                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</span>
+                </div>
+                <div id="slider_item"  class="subSliderArticleTwo left">
+                    <div><h3>Lorem Ipsum</h3>
+                    <img src="img/slider3.jpg" /></div>
+                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</span>
+                </div>
+                <div id="slider_item"  class="subSubSliderArticleOne left">
+                    <div><h3>Lorem Ipsum</h3>
+                    <img src="img/slider5.jpg" /></div>
+                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</span>
+                </div>
+                <div id="slider_item"  class="subSubSliderArticleTwo left">
+                    <div><h3>Lorem Ipsum</h3>
+                    <img src="img/slider6.jpg" /></div>
+                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</span>
+                </div>
+            </div>
+            <div id="slider"><h1>Operations</h1>
+                <div id="slider_item"  class="mainSliderArticle left">
+                    <div><h3>Lorem Ipsum</h3>
+                    <img src="img/slider7.jpg" /></div>
+                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</span>
+                </div>
+                <div id="slider_item"  class="subSliderArticleOne left">
+                    <div><h3>Lorem Ipsum</h3>
+                    <img src="img/slider8.jpg" /></div>
+                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</span>
+                </div>
+                <div id="slider_item"  class="subSliderArticleThree left">
+                    <div><h3>Lorem Ipsum</h3>
+                    <img src="img/slider9.jpg" /></div>
+                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</span>
+                </div>
+                <div id="slider_item"  class="subSliderArticleTwo left">
+                    <div><h3>Lorem Ipsum</h3>
+                    <img src="img/slider10.jpg" /></div>
+                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</span>
+                </div>
+                <div id="slider_item"  class="subSubSliderArticleOne left">
+                    <div><h3>Lorem Ipsum</h3>
+                    <img src="img/slider11.jpg" /></div>
+                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</span>
+                </div>
+                <div id="slider_item"  class="subSubSliderArticleTwo left">
+                    <div><h3>Lorem Ipsum</h3>
+                    <img src="img/slider12.jpg" /></div>
+                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</span>
+                </div>
+            </div>
+            <div id="slider"><h1>Training</h1>
+                <div id="slider_item"  class="mainSliderArticle left">
+                    <div><h3>Lorem Ipsum</h3>
+                    <img src="img/slider13.jpg" /></div>
+                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</span>
+                </div>
+                <div id="slider_item"  class="subSliderArticleOne left">
+                    <div><h3>Lorem Ipsum</h3>
+                    <img src="img/slider14.jpg" /></div>
+                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</span>
+                </div>
+                <div id="slider_item"  class="subSliderArticleThree left">
+                    <div><h3>Lorem Ipsum</h3>
+                    <img src="img/slider16.jpg" /></div>
+                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</span>
+                </div>
+                <div id="slider_item"  class="subSliderArticleTwo left">
+                    <div><h3>Lorem Ipsum</h3>
+                    <img src="img/slider15.jpg" /></div>
+                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</span>
+                </div>
+                <div id="slider_item"  class="subSubSliderArticleOne left">
+                    <div><h3>Lorem Ipsum</h3>
+                    <img src="img/slider17.jpg" /></div>
+                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</span>
+                </div>
+                <div id="slider_item"  class="subSubSliderArticleTwo left">
+                    <div><h3>Lorem Ipsum</h3>
+                    <img src="img/slider18.jpg" /></div>
+                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</span>
+                </div>
+            </div>
+            <div id="slider"><h1>Force Development</h1>
+                <div id="slider_item"  class="mainSliderArticle left">
+                    <div><h3>Lorem Ipsum</h3>
+                    <img src="img/slider19.jpg" /></div>
+                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</span>
+                </div>
+                <div id="slider_item"  class="subSliderArticleOne left">
+                    <div><h3>Lorem Ipsum</h3>
+                    <img src="img/slider20.jpg" /></div>
+                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</span>
+                </div>
+                <div id="slider_item"  class="subSliderArticleThree left">
+                    <div><h3>Lorem Ipsum</h3>
+                    <img src="img/slider22.jpg" /></div>
+                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</span>
+                </div>
+                <div id="slider_item"  class="subSliderArticleTwo left">
+                    <div><h3>Lorem Ipsum</h3>
+                    <img src="img/slider21.jpg" /></div>
+                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</span>
+                </div>
+                <div id="slider_item"  class="subSubSliderArticleOne left">
+                    <div><h3>Lorem Ipsum</h3>
+                    <img src="img/slider23.jpg" /></div>
+                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</span>
+                </div>
+                <div id="slider_item"  class="subSubSliderArticleTwo left">
+                    <div><h3>Lorem Ipsum</h3>
+                    <img src="img/slider24.jpg" /></div>
+                    <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</span>
+                </div>
+            </div>
+        </div>
+        <a href="#" id="prev" title="Show previous"> </a>
+        <a href="#" id="next" title="Show next"> </a>
+        
+    </div>
+    
+    <!-- Central Content Area -->
+    <div class="content">
+    
+    <!-- Slider Tabs Area -->
+    <div class="clear" style="height:330px;"></div>
+    <div id="pager"></div>
+    <!-- End of Slider Tabs Area -->
+    
+    <!-- News Widget -->
+    <div id="news_section" class="left">
+        <h1>Top Sites</h1>
+        <div>
+            <h2>Top Site 1</h2>
+            <img src="img/topstory1.jpg" alt="First Site"/>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div>
+        <div>
+            <h2>Top Site 2</h2>
+            <img src="img/topstory2.jpg" alt="Second Site"/>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div>
+        <div>
+            <h2>Top Site 3</h2>
+            <img src="img/topstory3.jpg" alt="Third Site"/>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div>
+        <div>
+            <h2>Top Story 4</h2>
+            <img src="img/topstory4.jpg" alt="Fourth Site"/>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        </div>
+    </div>
+    <!-- End of News Widget -->
+    
+    <!-- Documents Widget -->
+    <div id="documents_section"  class="left">
+        <div>
+            <h1>Key Documents</h1>
+            <div id="doc_tabs" class="front_page_selection">
+                <form>
+                    <select name="top_docs" id="top_docs">
+                        <option value="top">Top</option>
+                        <option value="operations">Operations</option>
+                        <option value="training">Training</option>
+                        <option value="lessons">Lessons</option>
+                        <option value="publications">Publications</option>
+                        <option value="force">Force Development</option>
+                    </select>
+                </form>
+            </div>
+            <div id="docTabs">
+            <div id="top">
+                <div class="topdocument">
+                    <img src="img/doc1.jpg" alt="Document" class="left"/>
+                    <h2>Document 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="topdocument">
+                    <img src="img/doc2.jpg" alt="Document" class="left"/>
+                    <h2>Document 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="topdocument">
+                    <img src="img/doc3.jpg" alt="Document" class="left"/>
+                    <h2>Document 3</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="topdocument">
+                    <img src="img/doc4.jpg" alt="Document" class="left"/>
+                    <h2>Document 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="topdocument">
+                    <img src="img/doc5.jpg" alt="Document" class="left"/>
+                    <h2>Document 5</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="topdocument">
+                    <img src="img/doc6.jpg" alt="Document" class="left"/>
+                    <h2>Document 6</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+            </div>
+            <div id="operations">
+                <div class="topdocument">
+                    <img src="img/doc7.jpg" alt="Document" class="left"/>
+                    <h2>Document 7</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="topdocument">
+                    <img src="img/doc8.jpg" alt="Document" class="left"/>
+                    <h2>Document 8</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="topdocument">
+                    <img src="img/doc9.jpg" alt="Document" class="left"/>
+                    <h2>Document 9</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="topdocument">
+                    <img src="img/doc10.jpg" alt="Document" class="left"/>
+                    <h2>Document 10</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="topdocument">
+                    <img src="img/doc11.jpg" alt="Document" class="left"/>
+                    <h2>Document 11</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="topdocument">
+                    <img src="img/doc12.jpg" alt="Document" class="left"/>
+                    <h2>Document 12</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+            </div>
+            <div id="training">
+                <div class="topdocument">
+                    <img src="img/doc13.jpg" alt="Document" class="left"/>
+                    <h2>Document 13</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="topdocument">
+                    <img src="img/doc14.jpg" alt="Document" class="left"/>
+                    <h2>Document 14</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="topdocument">
+                    <img src="img/doc15.jpg" alt="Document" class="left"/>
+                    <h2>Document 15</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="topdocument">
+                    <img src="img/doc16.jpg" alt="Document" class="left"/>
+                    <h2>Document 16</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="topdocument">
+                    <img src="img/doc17.jpg" alt="Document" class="left"/>
+                    <h2>Document 17</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="topdocument">
+                    <img src="img/doc18.jpg" alt="Document" class="left"/>
+                    <h2>Document 18</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+            </div>
+            <div id="lessons">
+                <div class="topdocument">
+                    <img src="img/doc19.jpg" alt="Document" class="left"/>
+                    <h2>Document 19</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="topdocument">
+                    <img src="img/doc20.jpg" alt="Document" class="left"/>
+                    <h2>Document 20</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="topdocument">
+                    <img src="img/doc21.jpg" alt="Document" class="left"/>
+                    <h2>Document 21</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="topdocument">
+                    <img src="img/doc22.jpg" alt="Document" class="left"/>
+                    <h2>Document 22</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="topdocument">
+                    <img src="img/doc23.jpg" alt="Document" class="left"/>
+                    <h2>Document 23</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="topdocument">
+                    <img src="img/doc24.jpg" alt="Document" class="left"/>
+                    <h2>Document 24</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+            </div>
+            <div id="publications">
+                <div class="topdocument">
+                    <img src="img/doc25.jpg" alt="Document" class="left"/>
+                    <h2>Document 25</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="topdocument">
+                    <img src="img/doc26.jpg" alt="Document" class="left"/>
+                    <h2>Document 26</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="topdocument">
+                    <img src="img/doc27.jpg" alt="Document" class="left"/>
+                    <h2>Document 27</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="topdocument">
+                    <img src="img/doc28.jpg" alt="Document" class="left"/>
+                    <h2>Document 28</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="topdocument">
+                    <img src="img/doc29.jpg" alt="Document" class="left"/>
+                    <h2>Document 29</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="topdocument">
+                    <img src="img/doc30.jpg" alt="Document" class="left"/>
+                    <h2>Document 30</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+            </div>
+            <div id="force">
+                <div class="topdocument">
+                    <img src="img/doc1.jpg" alt="Document" class="left"/>
+                    <h2>Document 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="topdocument">
+                    <img src="img/doc2.jpg" alt="Document" class="left"/>
+                    <h2>Document 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="topdocument">
+                    <img src="img/doc3.jpg" alt="Document" class="left"/>
+                    <h2>Document 3</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="topdocument">
+                    <img src="img/doc4.jpg" alt="Document" class="left"/>
+                    <h2>Document 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="topdocument">
+                    <img src="img/doc5.jpg" alt="Document" class="left"/>
+                    <h2>Document 5</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                <div class="topdocument">
+                    <img src="img/doc6.jpg" alt="Document" class="left"/>
+                    <h2>Document 6</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Documents Widget -->
+    
+    
+    <!-- Announcement Widget -->
+    <div id="announcements_section"  class="left">
+        <div>
+            <h1>Announcements</h1>
+        </div>
+        <div id="announce_tabs" class="front_page_selection">
+                <form>
+                    <select name="top_announce" id="top_announce">
+                        <option value="top_announcements">Top</option>
+                        <option value="operations_announcements">Operations</option>
+                        <option value="training_announcements">Training</option>
+                        <option value="lessons_announcements">Lessons</option>
+                        <option value="publications_announcements">Publications</option>
+                        <option value="force_announcements">Force Development</option>
+                    </select>
+                </form>
+            </div>
+        <div id="top_announcements">
+            <div class="topannouncement">
+                <h2>Announcement #1</h2>
+                <h4>13 May 13</h4>
+            </div>
+            <div class="topannouncement">
+                <h2>Announcement #2</h2>
+                <h4>09 May 13</h4>
+            </div>
+            <div class="topannouncement">
+                <h2>Announcement #3</h2>
+                <h4>01 May 13</h4>
+            </div>
+            <div class="topannouncement">
+                <h2>Announcement #4</h2>
+                <h4>17 Apr 13</h4>
+            </div>
+            <div class="topannouncement">
+                <h2>Announcement #5</h2>
+                <h4>11 Apr 13</h4>
+            </div>
+        </div>
+        <div id="operations_announcements">
+            <div class="topannouncement">
+                <h2>Operations Announcement #1</h2>
+                <h4>13 May 13</h4>
+            </div>
+            <div class="topannouncement">
+                <h2>Operations Announcement #2</h2>
+                <h4>09 May 13</h4>
+            </div>
+            <div class="topannouncement">
+                <h2>Operations Announcement #3</h2>
+                <h4>01 May 13</h4>
+            </div>
+            <div class="topannouncement">
+                <h2>Operations Announcement #4</h2>
+                <h4>17 Apr 13</h4>
+            </div>
+            <div class="topannouncement">
+                <h2>Operations Announcement #5</h2>
+                <h4>11 Apr 13</h4>
+            </div>
+        </div>
+        <div id="training_announcements">
+            <div class="topannouncement">
+                <h2>Training Announcement #1</h2>
+                <h4>13 May 13</h4>
+            </div>
+            <div class="topannouncement">
+                <h2>Training Announcement #2</h2>
+                <h4>09 May 13</h4>
+            </div>
+            <div class="topannouncement">
+                <h2>Training Announcement #3</h2>
+                <h4>01 May 13</h4>
+            </div>
+            <div class="topannouncement">
+                <h2>Training Announcement #4</h2>
+                <h4>17 Apr 13</h4>
+            </div>
+            <div class="topannouncement">
+                <h2>Training Announcement #5</h2>
+                <h4>11 Apr 13</h4>
+            </div>
+        </div>
+        <div id="lessons_announcements">
+            <div class="topannouncement">
+                <h2>Lessons Announcement #1</h2>
+                <h4>13 May 13</h4>
+            </div>
+            <div class="topannouncement">
+                <h2>Lessons Announcement #2</h2>
+                <h4>09 May 13</h4>
+            </div>
+            <div class="topannouncement">
+                <h2>Lessons Announcement #3</h2>
+                <h4>01 May 13</h4>
+            </div>
+            <div class="topannouncement">
+                <h2>Lessons Announcement #4</h2>
+                <h4>17 Apr 13</h4>
+            </div>
+            <div class="topannouncement">
+                <h2>Lessons Announcement #5</h2>
+                <h4>11 Apr 13</h4>
+            </div>
+        </div>
+        <div id="publications_announcements">
+            <div class="topannouncement">
+                <h2>Publications Announcement #1</h2>
+                <h4>13 May 13</h4>
+            </div>
+            <div class="topannouncement">
+                <h2>Publications Announcement #2</h2>
+                <h4>09 May 13</h4>
+            </div>
+            <div class="topannouncement">
+                <h2>Publications Announcement #3</h2>
+                <h4>01 May 13</h4>
+            </div>
+            <div class="topannouncement">
+                <h2>Publications Announcement #4</h2>
+                <h4>17 Apr 13</h4>
+            </div>
+            <div class="topannouncement">
+                <h2>Publications Announcement #5</h2>
+                <h4>11 Apr 13</h4>
+            </div>
+        </div>
+        <div id="force_announcements">
+            <div class="topannouncement">
+                <h2>Force Development Announcement #1</h2>
+                <h4>13 May 13</h4>
+            </div>
+            <div class="topannouncement">
+                <h2>Force Development Announcement #2</h2>
+                <h4>09 May 13</h4>
+            </div>
+            <div class="topannouncement">
+                <h2>Force Development Announcement #3</h2>
+                <h4>01 May 13</h4>
+            </div>
+            <div class="topannouncement">
+                <h2>Force Development Announcement #4</h2>
+                <h4>17 Apr 13</h4>
+            </div>
+            <div class="topannouncement">
+                <h2>Force Development Announcement #5</h2>
+                <h4>11 Apr 13</h4>
+            </div>
+        </div>
+    </div>
+    <!-- End of Announcement Widget -->
+    
+    
+    <!-- Video Widget -->
+    <div id="video_section"  class="left">
+        <div>
+            <h1>AKX Player</h1>
+        </div>
+        <div id="video_tabs" class="front_page_selection">
+                <form>
+                    <select name="top_vids" id="top_vids">
+                        <option value="top_videos">Top</option>
+                        <option value="operations_videos">Operations</option>
+                        <option value="training_videos">Training</option>
+                        <option value="lessons_videos">Lessons</option>
+                        <option value="publications_videos">Publications</option>
+                        <option value="force_videos">Force Development</option>
+                    </select>
+                </form>
+            </div>
+            <div id="top_videos">
+                <div class="topvid">
+                    <img src="img/vid1.jpg" alt="Document" class="left"/>
+                    <h2>Video 1</h2>
+                    <h4>11 Apr 13</h4>
+                </div>
+                <div class="topvid">
+                    <img src="img/vid2.jpg" alt="Document" class="left"/>
+                    <h2>Video 2</h2>
+                    <h4>11 Apr 13</h4>
+                </div>
+                <div class="topvid">
+                    <img src="img/vid3.jpg" alt="Document" class="left"/>
+                    <h2>Video 3</h2>
+                    <h4>11 Apr 13</h4>
+                </div>
+            </div>
+            <div id="operations_videos">
+                <div class="topvid">
+                    <img src="img/vid4.jpg" alt="Document" class="left"/>
+                    <h2>Video 4</h2>
+                    <h4>11 Apr 13</h4>
+                </div>
+                <div class="topvid">
+                    <img src="img/vid5.jpg" alt="Document" class="left"/>
+                    <h2>Video 5</h2>
+                    <h4>11 Apr 13</h4>
+                </div>
+                <div class="topvid">
+                    <img src="img/vid6.jpg" alt="Document" class="left"/>
+                    <h2>Video 6</h2>
+                    <h4>11 Apr 13</h4>
+                </div>
+            </div>
+            <div id="training_videos">
+                <div class="topvid">
+                    <img src="img/vid7.jpg" alt="Document" class="left"/>
+                    <h2>Video 7</h2>
+                    <h4>11 Apr 13</h4>
+                </div>
+                <div class="topvid">
+                    <img src="img/vid8.jpg" alt="Document" class="left"/>
+                    <h2>Video 8</h2>
+                    <h4>11 Apr 13</h4>
+                </div>
+                <div class="topvid">
+                    <img src="img/vid9.jpg" alt="Document" class="left"/>
+                    <h2>Video 9</h2>
+                    <h4>11 Apr 13</h4>
+                </div>
+            </div>
+            <div id="lessons_videos">
+                <div class="topvid">
+                    <img src="img/vid10.jpg" alt="Document" class="left"/>
+                    <h2>Video 10</h2>
+                    <h4>11 Apr 13</h4>
+                </div>
+                <div class="topvid">
+                    <img src="img/vid11.jpg" alt="Document" class="left"/>
+                    <h2>Video 11</h2>
+                    <h4>11 Apr 13</h4>
+                </div>
+                <div class="topvid">
+                    <img src="img/vid12.jpg" alt="Document" class="left"/>
+                    <h2>Video 12</h2>
+                    <h4>11 Apr 13</h4>
+                </div>
+            </div>
+            <div id="publications_videos">
+                <div class="topvid">
+                    <img src="img/vid13.jpg" alt="Document" class="left"/>
+                    <h2>Video 13</h2>
+                    <h4>11 Apr 13</h4>
+                </div>
+                <div class="topvid">
+                    <img src="img/vid14.jpg" alt="Document" class="left"/>
+                    <h2>Video 14</h2>
+                    <h4>11 Apr 13</h4>
+                </div>
+                <div class="topvid">
+                    <img src="img/vid15.jpg" alt="Document" class="left"/>
+                    <h2>Video 15</h2>
+                    <h4>11 Apr 13</h4>
+                </div>
+            </div>
+            <div id="force_videos">
+                <div class="topvid">
+                    <img src="img/vid16.jpg" alt="Document" class="left"/>
+                    <h2>Video 16</h2>
+                    <h4>11 Apr 13</h4>
+                </div>
+                <div class="topvid">
+                    <img src="img/vid17.jpg" alt="Document" class="left"/>
+                    <h2>Video 17</h2>
+                    <h4>11 Apr 13</h4>
+                </div>
+                <div class="topvid">
+                    <img src="img/vid18.jpg" alt="Document" class="left"/>
+                    <h2>Video 18</h2>
+                    <h4>11 Apr 13</h4>
+                </div>
+            </div>
+         </div>
+    <!-- End of Video Widget -->
+    <div class="clear"></div>  
+    </div>
+    <!-- End of Central Content Area -->
+<div class="footer left">
+    <div class="newsletter">
+        <div class="container">
+            <h2 class="left">Sign Up To The AKX Newsletter</h2>
+            <form><input type="text" name="newsletter" id="newsletter" value="Enter your email address..."/>
+                <input id="newsletter_submit" type="submit" value="Sign Me Up!"/>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="footer_area left useful_links">
+            <h1>Links</h1>
+            <ul>
+                <li>About AKX</li>                <li>Terms of Use</li>                <li>Copyright</li>                <li>Contact Webmaster</li>                <li>Add To Favourites</li>
+            </ul>
+        </div>
+        <div class="footer_area left">
+            <h1>Contact Us</h1>
+            <p>Directorate Land Warfare<br />            Land Warfare Centre<br />            Room W2 BLDG 612<br /><br />            lwdg-ims-akx-groupmailbox@mod.uk</p>
+        </div>
+        <div class="footer_area left">
+            <h1>Key Events</h1>
+            
+        </div>
+    </div>
+</div>
+</body>
+
+</html> 

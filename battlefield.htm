@@ -1,0 +1,392 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>AKX Mock Up - Article Page</title>
+    <link href="akx.css" rel="stylesheet" type="text/css" />
+    <script type='text/javascript' src='Jquery.js'></script>
+    <script type='text/javascript' src='JqueryUI.js'></script>
+    <script src="hover.js" type="text/javascript"></script>
+    <script src="jquery.megamenu.js" type="text/javascript"></script>
+    <script src="Tabs.js" type="text/javascript"></script>
+    <script src="carousel.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(function() {
+            var SelfLocation = window.location.href.split('?');
+            switch (SelfLocation[1]) {
+                case "justify_right":
+                    jQuery(".megamenu").megamenu({ 'justify': 'right' });
+                    break;
+                case "justify_left":
+                default:
+                    jQuery(".megamenu").megamenu();
+            }
+        });
+    </script>
+</head>
+<body>
+    <div id="header">
+        <div id="sitecollectionnav">
+            <nav class="container">
+                <a href="#"><img src="img/army.png" alt="Army Logo" id="mainlogo" class="left"/></a>
+                <div id="home_title" class="left"><a href="#">Army Knowledge eXchange</a></div>
+                <ul>
+                    <li><a href="#">AKX</a></li>
+                    <li><a href="#">BAeBB</a></li>
+                    <li><a href="#">LIFC</a></li>
+                    <li><a href="#">COP</a></li>
+                    <li><a href="#">AKX Player</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="mainnav">
+            <nav class="container">
+                <ul class="megamenu">
+                    <li><a href="#" class="menu_items">Home</a>  
+                    </li>
+                    <li><a href="#" class="menu_items">Operations</a>
+                        <div class="tabs">
+                            <div class="nav_headings">
+                                <ul>
+                                    <li><a href="#heading1">Current Operations</a></li>
+                                    <li><a href="#heading2">UK Ops / Resilience</a></li>
+                                    <li><a href="#heading3">Contingency / Future Operations</a></li>
+                                    <li><a href="#heading4">Past Operations</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav_data" id="heading1" >
+                                <div class="left">
+                                    <ul class="list_double">
+                                        <li><a href="#">The Afghan Hub</a></li>
+                                        <li><a href="#">Are You Deploying On Ops?</a></li>
+                                        <li><a href="#">Deploying Formation Reading List</a></li>
+                                        <li><a href="#">RTMC WIKI</a></li>
+                                        <li><a href="#">Advice To Your Successor</a></li>
+                                        <li><a href="#">Afghan CIS Briefing Facility</a></li>
+                                        <li><a href="#">After Action Reviews</a></li>
+                                        <li><a href="#">Attack The Network - COIN Targeting</a></li>
+                                        <li><a href="#">Biometrics</a></li>
+                                        <li><a href="#">BOWMAN (BUCK)</a></li>
+                                        <li><a href="#">C-IED</a></li>
+                                        <li><a href="#">Collective Training Group</a></li>
+                                        <li><a href="#">Culture & Language</a></li>
+                                        <li><a href="#">Female Engagement Teams</a></li>
+                                        <li><a href="#">Ground Sign Awareness</a></li>
+                                        <li><a href="#">HERRICK Lessons</a></li>
+                                        <li><a href="#">HQ Visualiser</a></li>
+                                        <li><a href="#">Influence Methods</a></li>
+                                        <li><a href="#">Land Stabilisation & COIN Centre</a></li>
+                                        <li><a href="#">Land Intelligence Fusion Centre</a></li>
+                                        <li><a href="#">Material & Personnel Exploitation</a></li>
+                                        <li><a href="#">Medical</a></li>
+                                        <li><a href="#">Mentoring</a></li>
+                                        <li><a href="#">Mission Exploitation</a></li>
+                                        <li><a href="#">MOD Afghanistan Information Portal</a></li>
+                                        <li><a href="#">MSSG</a></li>
+                                        <li><a href="#">Operational Support Information</a></li>
+                                        <li><a href="#">OPLAW</a></li>
+                                        <li><a href="#">Surveillance & Target Acquisition Plan</a></li>
+                                        <li><a href="#">Research & Development</a></li>
+                                        <li><a href="#">Iraq</a></li>
+                                        <li><a href="#">Falklands Islands</a></li>
+                                    </ul>
+                                </div>
+                                <div class="nav_img left">
+                                    <img src="img/menu1.jpg" alt="menutest" />
+                                </div>
+                            </div>
+                            <div class="nav_data" id="heading2" >
+                                <div class="left">
+                                    <ul class="list_double">
+                                        <li>Op GIRAFFE - Adverse weather</li>
+                                        <li>Op QUICKTHORN - HM Prison Officers dispute</li>
+                                        <li>Op ESCALIN - Threatened tanker drivers strike</li>
+                                        <li>Op OLYMPICS - Support to security</li>
+                                        <li>Op HELVETIC (38X) - Northern Ireland</li>
+                                    </ul>
+                                </div>
+                                <div class="nav_img left">
+                                    <img src="img/menu2.jpg" alt="menutest" />
+                                </div>
+                            </div>
+                            <div class="nav_data" id="heading3" >
+                                <div class="left">
+                                    <ul class="list_double">
+                                        <li>AGILE WARRIOR</li>
+                                        <li>Contingency Operations Cell</li>
+                                        <li>Doctrine</li>
+                                        <li>Force Development</li>
+                                        <li>Return to Contingency - 16 AA Bde</li>
+                                        <li>Stabilisation Ops</li>
+                                        <li>Scenario Setting</li>
+                                    </ul>
+                                </div>
+                                <div class="nav_img left">
+                                    <img src="img/menu3.jpg" alt="menutest" />
+                                </div>
+                            </div>
+                            <div class="nav_data" id="heading4" >
+                                <div class="left">
+                                    <ul class="list_double">
+                                        <li>Op TELIC - Iraq</li>
+                                        <li>Op TELIC Lessons</li>
+                                        <li>Baha Mousa Inquiry</li>
+                                        <li>Op ELLAMY - Libya</li>
+                                    </ul>
+                                </div>
+                                <div class="nav_img left">
+                                    <img src="img/menu4.jpg" alt="menutest" />
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#" class="menu_items">Training</a>
+                    <div class="tabs">
+                            <div class="nav_headings">
+                                <ul>
+                                    <li><a href="#heading5">ISTAR</a></li>
+                                    <li><a href="#heading6">Command &amp; Control</a></li>
+                                    <li><a href="#heading7">Core Soldier Skills</a></li>
+                                    <li><a href="#heading8">C-IED</a></li>
+                                    <li><a href="#heading9">Logistics and Resources</a></li>
+                                    <li><a href="#heading10">UK Ops / Resilience</a></li>
+                                    <li><a href="#heading11">Lessons From Training</a></li>
+                                    <li><a href="#heading12">Lessons For Training</a></li>
+                                    <li><a href="#heading13">Training Development</a></li>
+                                    <li><a href="#heading14">Training Policy</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav_data" id="heading5" >
+                                <div class="left">
+                                    <ul class="list_double">
+                                        <li>Influence Activity</li>
+                                        <li>Biometrics</li>
+                                        <li>Boomerang</li>
+                                        <li>Candidate C4 ISTAR CTO Guide</li>
+                                        <li>Attack The Network - COIN Targeting</li>
+                                        <li>Targeting</li>
+                                        <li>EW / Cyber</li>
+                                        <li>Surveillance & Target Acquisition Plan</li>
+                                    </ul>
+                                </div>
+                                <div class="nav_img left">
+                                    <img src="img/menu5.jpg" alt="menutest" />
+                                </div>
+                            </div>
+                            <div class="nav_data" id="heading6" >
+                                <div class="left">
+                                    <ul class="list_double">
+                                        <li>Combat Estimate</li>
+                                        <li>Operational Staff Work</li>
+                                        <li>Combat ID</li>
+                                        <li>Consequence Management</li>
+                                        <li>BOWMAN User Community Knowlegde Base</li>
+                                        <li>HQ Infrastructure</li>
+                                        <li>HQ Visualiser</li>
+                                        <li>Information Management / Information Exploitation</li>
+                                        <li>Communications</li>
+                                        <li>Air Manoeuvre</li>
+                                        <li>Air Land Integration</li>
+                                        <li>Battlespace Management</li>
+                                    </ul>
+                                </div>
+                                <div class="nav_img left">
+                                    <img src="img/menu6.jpg" alt="menutest" />
+                                </div>
+                            </div>
+                            <div class="nav_data" id="heading7" >
+                                <div class="left">
+                                    <ul class="list_double">
+                                        <li>Battle Casualty Drills</li>
+                                        <li>Battlefield Discipline</li>
+                                        <li>Captured Persons</li>
+                                        <li>Chemical Biological Radiological Nuclear</li>
+                                        <li>Close Combat Skills</li>
+                                        <li>Culture and Language Training</li>
+                                        <li>Digital Literacy</li>
+                                        <li>Dismounted Close Combat</li>
+                                        <li>Driving (Wheeled)</li>
+                                        <li>Seatbelt Safety</li>
+                                        <li>Driving (Tracked)</li>
+                                        <li>Female Engagement Teams</li>
+                                        <li>Fieldcraft</li>
+                                        <li>Fitness</li>
+                                        <li>Force Protection</li>
+                                        <li>Ground Sign Awareness</li>
+                                        <li>Material & Personnel Exploitation</li>
+                                        <li>Navigation</li>
+                                        <li>Infantry Basics</li>
+                                        <li>School of Infantry</li>
+                                        <li>Infantry Battleschool</li>
+                                        <li>Brecon Battlebook</li>
+                                        <li>Shooting (Small Arms)</li>
+                                        <li>Combat Marksmanship</li>
+                                        <li>Shooting (Direct Fire)</li>
+                                        <li>Joint Fires Weapons Effects</li>
+                                        <li>Shooting (Indirect Fire)</li>
+                                        <li>Operational Law - MATT 7</li>
+                                        <li>Rules of Engagement</li>
+                                        <li>Tactical Actions in the Urban Environment</li>
+                                        <li>Survive, Evade, Resist and Extract</li>
+                                        <li>Values & Standards</li>
+                                        <li>Test 1</li>
+                                        <li>Test 1</li>
+                                        <li>Test 1</li>
+                                        <li>Test 1</li>
+                                        <li>Test 1</li>
+                                        <li>Test 1</li>
+                                    </ul>
+                                </div>
+                                <div class="nav_img left">
+                                    <img src="img/menu7.jpg" alt="menutest" />
+                                </div>
+                            </div>
+                            <div class="nav_data" id="heading8" >
+                                <div class="left">
+                                    <ul class="list_double">
+                                        <li>Ground Sign Awareness</li>
+                                        <li>Talisman</li>
+                                    </ul>
+                                </div>
+                                <div class="nav_img left">
+                                    <img src="img/menu8.jpg" alt="menutest" />
+                                </div>
+                            </div>
+                            <div class="nav_data" id="heading9" >
+                                <div class="left">
+                                    <ul class="list_double">
+                                        <li>Equipment Support</li>
+                                        <li>Combat Service Support</li>
+                                    </ul>
+                                </div>
+                                <div class="nav_img left">
+                                    <img src="img/menu9.jpg" alt="menutest" />
+                                </div>
+                            </div>
+                            <div class="nav_data" id="heading10" >
+                                <div class="left">
+                                    <ul class="list_double">
+                                        <li>Op GIRAFFE - Adverse Weather</li>
+                                        <li>Op QUICKTHORN - HM Prison Officer's dispute</li>
+                                        <li>Op ESCALIN - Threatened tanker drivers strike</li>
+                                        <li>Op OLYMPICS - Support to security</li>
+                                        <li>Op HELVETIC (38X) - Northern Ireland</li>
+                                    </ul>
+                                </div>
+                                <div class="nav_img left">
+                                    <img src="img/menu10.jpg" alt="menutest" />
+                                </div>
+                            </div>
+                            <div class="nav_data" id="heading11" >
+                                <div class="left">
+                                    <ul class="list_double">
+                                        <li>IDAPTR</li>
+                                        <li>MST Review</li>
+                                        <li>PXR</li>
+                                        <li>Op Scenario Trg Vignettes</li>
+                                        <li>After Action Reviews</li>
+                                        <li>Good / Bad Practice</li>
+                                    </ul>
+                                </div>
+                                <div class="nav_img left">
+                                    <img src="img/menu11.jpg" alt="menutest" />
+                                </div>
+                            </div>
+                            <div class="nav_data" id="heading12" >
+                                <div class="left">
+                                    <ul class="list_double">
+                                        <li>Instructor Development</li>
+                                        <li>Methods and Media Selection</li>
+                                        <li>Learning Technologies</li>
+                                        <li>Simulation</li>
+                                        <li>After Action Reviews</li>
+                                    </ul>
+                                </div>
+                                <div class="nav_img left">
+                                    <img src="img/menu12.jpg" alt="menutest" />
+                                </div>
+                            </div>
+                            <div class="nav_data" id="heading13" >
+                                <div class="left">
+                                    <ul class="list_double">
+                                        <li>Needs Analysis</li>
+                                        <li>Training Objectives</li>
+                                        <li>Assessment</li>
+                                        <li>Training Design</li>
+                                        <li>Evaluation and Assurance</li>
+                                        <li>Training Research</li>
+                                        <li>MSc Dissertations</li>
+                                    </ul>
+                                </div>
+                                <div class="nav_img left">
+                                    <img src="img/menu13.jpg" alt="menutest" />
+                                </div>
+                            </div>
+                            <div class="nav_data" id="heading14" >
+                                <div class="left">
+                                    <ul class="list_double">
+                                        <li>Individual Training</li>
+                                        <li>Collective Training</li>
+                                        <li>Blue Book</li>
+                                    </ul>
+                                </div>
+                                <div class="nav_img left">
+                                    <img src="img/menu14.jpg" alt="menutest" />
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#" class="menu_items">Lessons</a></li>
+                    <li><a href="#" class="menu_items">Doctrine &amp; Publications</a></li>
+                    <li><a href="#" class="menu_items">Force Development</a></li>
+                    <li><a href="#" class="menu_items">Forums</a></li>
+                    <li id="search_button" class="menu_items"><a href="#" ><img src="img/search.png" alt="Search" id="search_image"/></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- Slider -->
+
+ <!-- Central Content Area -->
+    <div class="content">
+    <div class="clear"></div>
+    
+    </div>
+
+
+<div class="footer left">
+    <div class="newsletter">
+        <div class="container">
+            <h2 class="left">Sign Up To The AKX Newsletter</h2>
+            <form><input type="text" name="newsletter" id="newsletter" value="Enter your email address..."/>
+                <input id="newsletter_submit" type="submit" value="Sign Me Up!"/>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div class="footer_area left useful_links">
+            <h1>Links</h1>
+            <ul>
+                <li>About AKX</li>
+                <li>Terms of Use</li>
+                <li>Copyright</li>
+                <li>Contact Webmaster</li>
+                <li>Add To Favourites</li>
+            </ul>
+        </div>
+        <div class="footer_area left">
+            <h1>Contact Us</h1>
+            <p>Directorate Land Warfare<br />
+            Land Warfare Centre<br />
+            Room W2 BLDG 612<br /><br />
+
+            lwdg-ims-akx-groupmailbox@mod.uk</p>
+        </div>
+        <div class="footer_area left">
+            <h1>Key Events</h1>
+            
+        </div>
+    </div>
+</div>
+</body>
+</html>
